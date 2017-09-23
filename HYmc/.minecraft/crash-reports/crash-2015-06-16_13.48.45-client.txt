@@ -1,0 +1,362 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 15-6-16 下午1:48
+Description: Initializing game
+
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    advsolar/common/AdvancedSolarPanel.afterModsLoaded(Lcpw/mods/fml/common/event/FMLPostInitializationEvent;)V @2664: invokestatic
+  Reason:
+    Type 'net/minecraftforge/oredict/ShapedOreRecipe' (current frame, stack[0]) is not assignable to 'net/minecraft/inventory/ContainerEnchantment$1'
+  Current Frame:
+    bci: @2664
+    flags: { }
+    locals: { 'advsolar/common/AdvancedSolarPanel', 'cpw/mods/fml/common/event/FMLPostInitializationEvent' }
+    stack: { 'net/minecraftforge/oredict/ShapedOreRecipe' }
+  Bytecode:
+    0x0000000: b201 b5b6 028f b201 239a 0092 b202 93bb
+    0x0000010: 0076 59b2 01c6 04b7 0296 100d bd00 0459
+    0x0000020: 0313 0298 5359 0413 029a 5359 0513 029c
+    0x0000030: 5359 0610 41b8 02a2 5359 07bb 0076 59b2
+    0x0000040: 018f 0403 b702 0953 5908 1042 b802 a253
+    0x0000050: 5910 0613 02a4 b802 5bb8 02aa 5359 1007
+    0x0000060: 1052 b802 a253 5910 0813 02ac b802 5b53
+    0x0000070: 5910 0910 44b8 02a2 5359 100a 1302 aeb8
+    0x0000080: 025b 5359 100b 1046 b802 a253 5910 0c13
+    0x0000090: 02b0 b802 5b53 b902 b503 00b2 0127 9a00
+    0x00000a0: 92b2 0293 bb00 7659 b201 ce04 b702 9610
+    0x00000b0: 0dbd 0004 5903 1302 9853 5904 1302 9a53
+    0x00000c0: 5905 1302 9c53 5906 1041 b802 a253 5907
+    0x00000d0: bb00 7659 b201 8f04 04b7 0209 5359 0810
+    0x00000e0: 42b8 02a2 5359 1006 1302 b7b8 025b b802
+    0x00000f0: aa53 5910 0710 52b8 02a2 5359 1008 1302
+    0x0000100: acb8 025b 5359 1009 1044 b802 a253 5910
+    0x0000110: 0a13 02b9 b802 5b53 5910 0b10 46b8 02a2
+    0x0000120: 5359 100c 1302 bbb8 025b 53b9 02b5 0300
+    0x0000130: b201 2b9a 00f7 1302 b7b8 025b b600 7a4d
+    0x0000140: 2c11 7fff b602 beb2 0293 bb00 7659 b201
+    0x0000150: d204 b702 9610 0dbd 0004 5903 1302 9853
+    0x0000160: 5904 1302 9a53 5905 1302 9c53 5906 1041
+    0x0000170: b802 a253 5907 bb00 7659 b201 8f04 05b7
+    0x0000180: 0209 5359 0810 42b8 02a2 5359 1006 1302
+    0x0000190: b7b8 025b b802 aa53 5910 0710 52b8 02a2
+    0x00001a0: 5359 1008 1302 acb8 025b 5359 1009 1044
+    0x00001b0: b802 a253 5910 0a13 02b9 b802 5b53 5910
+    0x00001c0: 0b10 46b8 02a2 5359 100c 1302 bbb8 025b
+    0x00001d0: 53b9 02b5 0300 b202 93bb 0076 59b2 01d2
+    0x00001e0: 04b7 0296 1006 bd00 0459 0313 0298 5359
+    0x00001f0: 0413 02c0 5359 0510 41b8 02a2 5359 06bb
+    0x0000200: 0076 59b2 018f 0405 b702 0953 5907 1042
+    0x0000210: b802 a253 5908 bb00 7659 b201 ce04 b702
+    0x0000220: 96b8 02aa 53b9 02b5 0300 b201 479a 0389
+    0x0000230: b201 2f9a 020f b202 93b2 01f3 1007 bd00
+    0x0000240: 0459 0313 02c2 5359 0413 02c4 5359 0513
+    0x0000250: 02c2 5359 0610 41b8 02a2 5359 0713 02c6
+    0x0000260: 5359 0810 42b8 02a2 5359 1006 1301 fe53
+    0x0000270: b902 b503 00b2 01f6 1009 bd00 0459 0313
+    0x0000280: 02c4 5359 0413 02c8 5359 0513 02c4 5359
+    0x0000290: 0610 41b8 02a2 5359 0713 02ca b802 5b53
+    0x00002a0: 5908 1042 b802 a253 5910 0613 02cc b802
+    0x00002b0: 5b53 5910 0710 43b8 02a2 5359 1008 b201
+    0x00002c0: f353 b802 cdb2 01fa 100d bd00 0459 0313
+    0x00002d0: 02c4 5359 0413 02cf 5359 0513 02d1 5359
+    0x00002e0: 0610 41b8 02a2 5359 07b2 02d4 5359 0810
+    0x00002f0: 42b8 02a2 5359 1006 b201 fd53 5910 0710
+    0x0000300: 44b8 02a2 5359 1008 bb00 7659 b202 d704
+    0x0000310: 07b7 01de 5359 1009 1043 b802 a253 5910
+    0x0000320: 0ab2 01f6 5359 100b 1046 b802 a253 5910
+    0x0000330: 0cb2 02da 53b8 02cd b201 4399 0088 bb00
+    0x0000340: 7659 b201 8f04 03b7 0209 100d bd00 0459
+    0x0000350: 0313 02dc 5359 0413 02de 5359 0513 02c4
+    0x0000360: 5359 0610 52b8 02a2 5359 0713 02e0 b802
+    0x0000370: 5b53 5908 1044 b802 a253 5910 0613 02ca
+    0x0000380: b802 5b53 5910 0710 53b8 02a2 5359 1008
+    0x0000390: 1302 e2b8 025b 5359 1009 1041 b802 a253
+    0x00003a0: 5910 0a13 02ac b802 5b53 5910 0b10 42b8
+    0x00003b0: 02a2 5359 100c 1302 e4b8 025b 53b8 02cd
+    0x00003c0: a700 82bb 0076 59b2 018f 0403 b702 0910
+    0x00003d0: 0dbd 0004 5903 1302 dc53 5904 1302 de53
+    0x00003e0: 5905 1302 c453 5906 1052 b802 a253 5907
+    0x00003f0: 1302 e0b8 025b 5359 0810 44b8 02a2 5359
+    0x0000400: 1006 1302 cab8 025b 5359 1007 1053 b802
+    0x0000410: a253 5910 0813 02e2 b802 5b53 5910 0910
+    0x0000420: 41b8 02a2 5359 100a 1302 acb8 025b 5359
+    0x0000430: 100b 1042 b802 a253 5910 0cb2 01fa 53b8
+    0x0000440: 02cd b201 379a 0078 b201 2f9a 0072 bb00
+    0x0000450: 7659 b201 8f04 05b7 0209 100b bd00 0459
+    0x0000460: 0313 0298 5359 0413 02e6 5359 0513 02e8
+    0x0000470: 5359 0610 41b8 02a2 5359 07b2 02ed 5359
+    0x0000480: 0810 58b8 02a2 5359 1006 1302 efb8 025b
+    0x0000490: 5359 1007 104d b802 a253 5910 08bb 0076
+    0x00004a0: 59b2 018f 0403 b702 0953 5910 0910 52b8
+    0x00004b0: 02a2 5359 100a b201 e353 b802 cdb2 0133
+    0x00004c0: 9a04 3eb2 012f 9a04 38bb 0076 59b2 018f
+    0x00004d0: 0404 b702 0910 0fbd 0004 5903 1302 e653
+    0x00004e0: 5904 1302 de53 5905 1302 c453 5906 1058
+    0x00004f0: b802 a253 5907 1302 ccb8 025b 5359 0810
+    0x0000500: 4db8 02a2 5359 1006 b202 ed53 5910 0710
+    0x0000510: 44b8 02a2 5359 1008 1302 f1b8 025b 5359
+    0x0000520: 1009 1053 b802 a253 5910 0abb 0076 59b2
+    0x0000530: 018f 0403 b702 0953 5910 0b10 41b8 02a2
+    0x0000540: 5359 100c 1302 acb8 025b 5359 100d 1042
+    0x0000550: b802 a253 5910 0eb2 01e0 53b8 02cd b201
+    0x0000560: 379a 039d bb00 7659 b201 8f04 05b7 0209
+    0x0000570: 1007 bd00 0459 0313 02f3 5359 0413 02f5
+    0x0000580: 5359 0513 02f3 5359 0610 4db8 02a2 5359
+    0x0000590: 07bb 0076 59b2 018f 0404 b702 0953 5908
+    0x00005a0: 1058 b802 a253 5910 0613 02ac b802 5b53
+    0x00005b0: b802 cda7 034b b201 2f9a 0229 1301 feb8
+    0x00005c0: 02f9 4d2c b602 ff4e 2db9 0304 0100 9900
+    0x00005d0: 4d2d b903 0801 00c0 0076 3a04 b201 f310
+    0x00005e0: 07bd 0004 5903 1302 c253 5904 1302 c453
+    0x00005f0: 5905 1302 c253 5906 1041 b802 a253 5907
+    0x0000600: 1303 0ab8 025b 5359 0810 42b8 02a2 5359
+    0x0000610: 1006 1904 53b8 02cd a7ff b0b2 01f6 1009
+    0x0000620: bd00 0459 0313 02c4 5359 0413 02c8 5359
+    0x0000630: 0513 02c4 5359 0610 41b8 02a2 5359 0713
+    0x0000640: 02ca b802 5b53 5908 1042 b802 a253 5910
+    0x0000650: 0613 02cc b802 5b53 5910 0710 43b8 02a2
+    0x0000660: 5359 1008 b201 f353 b802 cdb2 01fa 100d
+    0x0000670: bd00 0459 0313 02c4 5359 0413 02cf 5359
+    0x0000680: 0513 02d1 5359 0610 41b8 02a2 5359 07b2
+    0x0000690: 02d4 5359 0810 42b8 02a2 5359 1006 b201
+    0x00006a0: fd53 5910 0710 44b8 02a2 5359 1008 bb00
+    0x00006b0: 7659 b202 d704 07b7 01de 5359 1009 1043
+    0x00006c0: b802 a253 5910 0ab2 01f6 5359 100b 1046
+    0x00006d0: b802 a253 5910 0cb2 02da 53b8 02cd b201
+    0x00006e0: 4399 0085 bb00 7659 b201 8f04 03b7 0209
+    0x00006f0: 100d bd00 0459 0313 02dc 5359 0413 02de
+    0x0000700: 5359 0513 02c4 5359 0610 52b8 02a2 5359
+    0x0000710: 07b2 01f0 5359 0810 44b8 02a2 5359 1006
+    0x0000720: 1302 cab8 025b 5359 1007 1053 b802 a253
+    0x0000730: 5910 0813 02e2 b802 5b53 5910 0910 41b8
+    0x0000740: 02a2 5359 100a 1302 acb8 025b 5359 100b
+    0x0000750: 1042 b802 a253 5910 0c13 02e4 b802 5b53
+    0x0000760: b802 cda7 007f bb00 7659 b201 8f04 03b7
+    0x0000770: 0209 100d bd00 0459 0313 02dc 5359 0413
+    0x0000780: 02de 5359 0513 02c4 5359 0610 52b8 02a2
+    0x0000790: 5359 07b2 01f0 5359 0810 44b8 02a2 5359
+    0x00007a0: 1006 1302 cab8 025b 5359 1007 1053 b802
+    0x00007b0: a253 5910 0813 02e2 b802 5b53 5910 0910
+    0x00007c0: 41b8 02a2 5359 100a 1302 acb8 025b 5359
+    0x00007d0: 100b 1042 b802 a253 5910 0cb2 01fa 53b8
+    0x00007e0: 02cd b201 379a 0078 b201 2f9a 0072 bb00
+    0x00007f0: 7659 b201 8f04 05b7 0209 100b bd00 0459
+    0x0000800: 0313 0298 5359 0413 02e6 5359 0513 02e8
+    0x0000810: 5359 0610 41b8 02a2 5359 07b2 02ed 5359
+    0x0000820: 0810 58b8 02a2 5359 1006 1302 efb8 025b
+    0x0000830: 5359 1007 104d b802 a253 5910 08bb 0076
+    0x0000840: 59b2 018f 0403 b702 0953 5910 0910 52b8
+    0x0000850: 02a2 5359 100a b201 ec53 b802 cdb2 0133
+    0x0000860: 9a00 9eb2 012f 9a00 98bb 0076 59b2 018f
+    0x0000870: 0404 b702 0910 0fbd 0004 5903 1302 e653
+    0x0000880: 5904 1302 de53 5905 1302 c453 5906 1058
+    0x0000890: b802 a253 5907 1302 ccb8 025b 5359 0810
+    0x00008a0: 4db8 02a2 5359 1006 b202 ed53 5910 0710
+    0x00008b0: 44b8 02a2 5359 1008 1302 f1b8 025b 5359
+    0x00008c0: 1009 1053 b802 a253 5910 0abb 0076 59b2
+    0x00008d0: 018f 0403 b702 0953 5910 0b10 41b8 02a2
+    0x00008e0: 5359 100c 1302 acb8 025b 5359 100d 1042
+    0x00008f0: b802 a253 5910 0eb2 01e9 53b8 02cd b201
+    0x0000900: 379a 0083 bb00 7659 b201 8f04 05b7 0209
+    0x0000910: 1007 bd00 0459 0313 02f3 5359 0413 02f5
+    0x0000920: 5359 0513 02f3 5359 0610 4db8 02a2 5359
+    0x0000930: 07bb 0076 59b2 018f 0404 b702 0953 5908
+    0x0000940: 1058 b802 a253 5910 0613 02ac b802 5b53
+    0x0000950: b802 cdbb 0076 59b2 018f 1008 04b7 0209
+    0x0000960: 06bd 0004 5903 1303 0c53 5904 1058 b802
+    0x0000970: a253 5905 bb00 7659 b201 8f04 05b7 0209
+    0x0000980: 53b8 02cd b201 3b9a 00a3 b202 0610 07bd
+    0x0000990: 0004 5903 1302 f553 5904 1303 0e53 5905
+    0x00009a0: 1302 f553 5906 104d b802 a253 5907 b201
+    0x00009b0: f053 5908 1058 b802 a253 5910 0613 0310
+    0x00009c0: b802 5b53 b802 cdb2 020b 100b bd00 0459
+    0x00009d0: 0313 02f5 5359 0413 02c4 5359 0513 02f5
+    0x00009e0: 5359 0610 4db8 02a2 5359 0713 02e4 b802
+    0x00009f0: 5b53 5908 1058 b802 a253 5910 0613 0312
+    0x0000a00: b802 5b53 5910 0710 41b8 02a2 5359 1008
+    0x0000a10: 1302 acb8 025b 5359 1009 1042 b802 a253
+    0x0000a20: 5910 0ab2 0206 53b8 02cd bb03 1459 b201
+    0x0000a30: e610 07bd 0004 5903 1303 1653 5904 1303
+    0x0000a40: 1853 5905 1303 1653 5906 1052 b802 a253
+    0x0000a50: 5907 b203 1b53 5908 1053 b802 a253 5910
+    0x0000a60: 0613 026c 53b7 031d b803 20b2 01f0 1006
+    0x0000a70: b803 2210 09bd 0004 5903 1302 dc53 5904
+    0x0000a80: 1303 2453 5905 1302 dc53 5906 1052 b802
+    0x0000a90: a253 5907 1302 e0b8 025b 5359 0810 41b8
+    0x0000aa0: 02a2 5359 1006 b201 e653 5910 0710 53b8
+    0x0000ab0: 02a2 5359 1008 b203 1b53 b802 cdb2 01e9
+    0x0000ac0: 1007 bd00 0459 0313 02dc 5359 0413 0318
+    0x0000ad0: 5359 0513 02dc 5359 0610 52b8 02a2 5359
+    0x0000ae0: 07b2 01e6 5359 0810 53b8 02a2 5359 1006
+    0x0000af0: b201 e053 b802 cdb2 01ec 1007 bd00 0459
+    0x0000b00: 0313 0316 5359 0413 0318 5359 0513 0316
+    0x0000b10: 5359 0610 52b8 02a2 5359 07b2 01e9 5359
+    0x0000b20: 0810 53b8 02a2 5359 1006 b201 e353 b802
+    0x0000b30: cdb2 01e3 1007 bd00 0459 0313 02f3 5359
+    0x0000b40: 0413 02f5 5359 0513 02f3 5359 0610 4db8
+    0x0000b50: 02a2 5359 0713 02f1 b802 5b53 5908 1058
+    0x0000b60: b802 a253 5910 06b2 01e0 53b8 02cd b201
+    0x0000b70: e008 bd00 0459 0313 0326 5359 0413 0326
+    0x0000b80: 5359 0513 0326 5359 0610 58b8 02a2 5359
+    0x0000b90: 07b2 01fd 53b8 02cd b201 3f9a 006f bb00
+    0x0000ba0: 7659 b203 2a04 03b7 0209 07bd 0004 5903
+    0x0000bb0: 1303 2c53 5904 1303 2c53 5905 1041 b802
+    0x0000bc0: a253 5906 bb00 7659 b203 2f04 03b7 0209
+    0x0000bd0: 53b8 02cd bb00 7659 b203 2a04 04b7 0209
+    0x0000be0: 07bd 0004 5903 1303 2c53 5904 1303 2c53
+    0x0000bf0: 5905 1041 b802 a253 5906 bb00 7659 b203
+    0x0000c00: 2f04 04b7 0209 53b8 02cd b1            
+  Stackmap Table:
+    same_frame_extended(@155)
+    same_frame_extended(@304)
+    same_frame_extended(@554)
+    same_frame_extended(@963)
+    same_frame_extended(@1090)
+    same_frame_extended(@1213)
+    same_frame_extended(@1462)
+    append_frame(@1480,Object[#763],Object[#769])
+    same_frame_extended(@1563)
+    same_frame_extended(@1894)
+    chop_frame(@2018,2)
+    same_frame_extended(@2141)
+    same_frame_extended(@2302)
+    same_frame_extended(@2436)
+    same_frame_extended(@2602)
+    same_frame_extended(@3082)
+
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:492)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(SourceFile:124)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:492)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(SourceFile:124)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 78378224 bytes (74 MB) / 181690368 bytes (173 MB) up to 1844183040 bytes (1758 MB)
+	JVM Flags: 5 total; -Xincgc -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmx1792m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 15 mods loaded, 15 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed
+	FML{7.10.85.1291} [Forge Mod Loader] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed
+	Forge{10.13.2.1291} [Minecraft Forge] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed
+	CodeChickenCore{1.0.3.28} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed
+	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) Unloaded->Constructed
+	NotEnoughItems{1.0.3.60} [Not Enough Items] (NotEnoughItems 物品管理器 1.0.3.60.jar) Unloaded->Constructed
+	arrowcam{1.1} [Arrow Camera] (Arrow-Camera-Mod-1.7.x.jar) Unloaded->Constructed
+	IC2{2.2.726-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.726-experimental.jar) Unloaded->Constructed
+	Calculator{1.7.4} [Calculator] (Calculator-1.7.10-1.7.4.jar) Unloaded->Constructed
+	inventorytweaks{1.59-dev-155-5dbbb14} [Inventory Tweaks] (InventoryTweaks-1.59-dev-155.jar) Unloaded->Constructed
+	AdvancedSolarPanel{3.4.7} [Advanced Solar Panels] (mod_AdvancedSolarPanels_3_4_7_IC_EXP.zip) Unloaded
+	cfm{3.4.7} [?9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) Unloaded
+	ReiMinimap{1.7.10} [Rei's小地图 堕落汉化] (Reis-minimap-mod-cn-1.7.10.jar) Unloaded
+	shincolle{1.7.10.rv19} [Shinkeiseikan Collection] (ShinColle-1.7.10.rv19.jar) Unloaded
+	toolsdoneright{1.1.3} [Tools Done Right] (Tools Done Right by NukeDuck [1.7.10][1.1.3].zip) Unloaded
+	Launched Version: 1.7.10-Forge10.13.2.1291
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7560D GL version 4.2.12422 Compatibility Profile Context 13.152.0.0, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

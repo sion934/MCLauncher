@@ -1,0 +1,156 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 15-8-26 ÉÏÎç4:01
+Description: Unexpected error
+
+java.lang.ArrayIndexOutOfBoundsException: 7
+	at tconstruct.world.blocks.MeatBlock.func_149691_a(MeatBlock.java:38)
+	at net.minecraft.block.Block.func_149673_e(Block.java:556)
+	at net.minecraft.client.renderer.RenderBlocks.func_147793_a(RenderBlocks.java:9361)
+	at net.minecraft.client.renderer.RenderBlocks.func_147751_a(RenderBlocks.java:5061)
+	at net.minecraft.client.renderer.RenderBlocks.func_147784_q(RenderBlocks.java:4712)
+	at net.minecraft.client.renderer.RenderBlocks.func_147805_b(RenderBlocks.java:307)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:320)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:2232)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1514)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1305)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:989)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:887)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:122)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at tconstruct.world.blocks.MeatBlock.func_149691_a(MeatBlock.java:38)
+	at net.minecraft.block.Block.func_149673_e(Block.java:556)
+	at net.minecraft.client.renderer.RenderBlocks.func_147793_a(RenderBlocks.java:9361)
+	at net.minecraft.client.renderer.RenderBlocks.func_147751_a(RenderBlocks.java:5061)
+	at net.minecraft.client.renderer.RenderBlocks.func_147784_q(RenderBlocks.java:4712)
+	at net.minecraft.client.renderer.RenderBlocks.func_147805_b(RenderBlocks.java:307)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:320)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:2232)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1514)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['reyookixuan'/7216, l='MpServer', x=-25135.18, y=77.62, z=25063.78]]
+	Chunk stats: MultiplayerChunkCache: 361, 361
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-25134,76,25052), Chunk: (at 2,4,12 in -1571,1565; contains blocks -25136,0,25040 to -25121,255,25055), Region: (-50,48; contains chunks -1600,1536 to -1569,1567, blocks -25600,0,24576 to -25089,255,25087)
+	Level time: 79312571 game time, 82278861 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 78 total; [EntityPainting['»­'/2816, l='MpServer', x=-25087.50, y=82.50, z=25088.06], EntitySkeleton['÷¼÷Ã'/7808, l='MpServer', x=-25138.13, y=23.00, z=25118.38], EntityHarbourHime['¸ÛÍåÆÜ¼§'/2817, l='MpServer', x=-25092.19, y=79.00, z=25111.03], EntitySkeleton['÷¼÷Ã'/7809, l='MpServer', x=-25131.44, y=26.00, z=25113.84], EntityClientPlayerMP['reyookixuan'/7216, l='MpServer', x=-25135.18, y=77.62, z=25063.78], EntitySkeleton['÷¼÷Ã'/7811, l='MpServer', x=-25131.66, y=26.00, z=25114.78], EntityPainting['»­'/2791, l='MpServer', x=-25089.50, y=83.00, z=25086.94], EntitySkeleton['÷¼÷Ã'/7812, l='MpServer', x=-25129.34, y=26.00, z=25113.66], EntityPainting['»­'/2790, l='MpServer', x=-25090.00, y=77.50, z=25084.06], EntityPainting['»­'/2789, l='MpServer', x=-25091.94, y=77.50, z=25085.00], EntityPainting['»­'/2822, l='MpServer', x=-25082.94, y=84.50, z=25118.00], EntityPainting['»­'/2797, l='MpServer', x=-25093.00, y=82.50, z=25091.94], EntityPainting['»­'/2823, l='MpServer', x=-25082.94, y=85.50, z=25118.00], EntityPainting['»­'/2796, l='MpServer', x=-25095.94, y=83.00, z=25090.00], EntityPainting['»­'/2824, l='MpServer', x=-25084.06, y=87.00, z=25117.00], EntityPainting['»­'/2825, l='MpServer', x=-25125.94, y=76.00, z=25120.50], EntityPainting['»­'/2826, l='MpServer', x=-25116.00, y=76.00, z=25120.94], EntityCreeper['ÅÀÐÐÕß'/8205, l='MpServer', x=-25135.50, y=14.00, z=25047.50], EntityPainting['»­'/2795, l='MpServer', x=-25085.50, y=82.50, z=25085.06], EntityPainting['»­'/2794, l='MpServer', x=-25079.06, y=83.00, z=25085.00], EntityCreeper['ÅÀÐÐÕß'/8207, l='MpServer', x=-25136.50, y=14.00, z=25047.50], EntityPainting['»­'/2816, l='MpServer', x=-25087.50, y=82.50, z=25088.06], EntityPainting['»­'/2822, l='MpServer', x=-25082.94, y=84.50, z=25118.00], EntityPainting['»­'/2823, l='MpServer', x=-25082.94, y=85.50, z=25118.00], EntityPainting['»­'/2824, l='MpServer', x=-25084.06, y=87.00, z=25117.00], EntityPainting['»­'/2841, l='MpServer', x=-25081.00, y=78.50, z=25121.94], EntityPainting['»­'/2802, l='MpServer', x=-25119.50, y=76.50, z=25116.94], EntityCreeper['ÅÀÐÐÕß'/8094, l='MpServer', x=-25130.50, y=26.00, z=25109.50], EntityCreeper['ÅÀÐÐÕß'/8095, l='MpServer', x=-25129.44, y=27.00, z=25117.97], EntityPainting['»­'/2800, l='MpServer', x=-25125.94, y=76.00, z=25119.50], EntityPainting['»­'/2799, l='MpServer', x=-25121.50, y=76.50, z=25116.94], EntityPainting['»­'/2798, l='MpServer', x=-25120.50, y=77.00, z=25116.94], EntitySkeleton['÷¼÷Ã'/7975, l='MpServer', x=-25074.50, y=29.00, z=25021.50], EntityZombie['½©Ê¬'/7976, l='MpServer', x=-25084.28, y=31.00, z=25020.74], EntityPainting['»­'/2841, l='MpServer', x=-25081.00, y=78.50, z=25121.94], EntityPainting['»­'/2826, l='MpServer', x=-25116.00, y=76.00, z=25120.94], EntityPainting['»­'/2825, l='MpServer', x=-25125.94, y=76.00, z=25120.50], EntityZombie['½©Ê¬'/7470, l='MpServer', x=-25143.50, y=79.00, z=25023.50], EntitySkeleton['÷¼÷Ã'/7471, l='MpServer', x=-25146.50, y=79.00, z=25024.50], EntitySkeleton['÷¼÷Ã'/7472, l='MpServer', x=-25147.50, y=79.00, z=25023.50], EntitySkeleton['÷¼÷Ã'/7473, l='MpServer', x=-25149.50, y=79.00, z=25024.50], EntityCreeper['ÅÀÐÐÕß'/7871, l='MpServer', x=-25085.50, y=29.00, z=25040.50], EntityCreeper['ÅÀÐÐÕß'/8004, l='MpServer', x=-25083.50, y=29.00, z=25017.50], EntitySkeleton['÷¼÷Ã'/7631, l='MpServer', x=-25169.50, y=110.00, z=25042.50], EntityZombie['½©Ê¬'/8164, l='MpServer', x=-25076.00, y=21.00, z=25112.41], EntitySkeleton['÷¼÷Ã'/8292, l='MpServer', x=-25129.50, y=25.00, z=25105.50], EntityPainting['»­'/2789, l='MpServer', x=-25091.94, y=77.50, z=25085.00], EntitySkeleton['÷¼÷Ã'/8293, l='MpServer', x=-25126.50, y=25.00, z=25106.50], EntityPainting['»­'/2790, l='MpServer', x=-25090.00, y=77.50, z=25084.06], EntitySkeleton['÷¼÷Ã'/8294, l='MpServer', x=-25126.50, y=25.00, z=25107.50], EntityPainting['»­'/2791, l='MpServer', x=-25089.50, y=83.00, z=25086.94], EntitySkeleton['÷¼÷Ã'/8295, l='MpServer', x=-25129.50, y=25.00, z=25108.50], EntityMinecartEmpty['entity.MinecartRideable.name'/2792, l='MpServer', x=-25130.50, y=48.50, z=25101.50], EntityChicken['¼¦'/2793, l='MpServer', x=-25120.84, y=76.36, z=25092.56], EntityPainting['»­'/2794, l='MpServer', x=-25079.06, y=83.00, z=25085.00], EntityPainting['»­'/2795, l='MpServer', x=-25085.50, y=82.50, z=25085.06], EntityPainting['»­'/2796, l='MpServer', x=-25095.94, y=83.00, z=25090.00], EntityPainting['»­'/2797, l='MpServer', x=-25093.00, y=82.50, z=25091.94], EntityPainting['»­'/2798, l='MpServer', x=-25120.50, y=77.00, z=25116.94], EntityPainting['»­'/2799, l='MpServer', x=-25121.50, y=76.50, z=25116.94], EntityPainting['»­'/2800, l='MpServer', x=-25125.94, y=76.00, z=25119.50], EntityChicken['¼¦'/2801, l='MpServer', x=-25123.47, y=70.63, z=25105.56], EntityPainting['»­'/2802, l='MpServer', x=-25119.50, y=76.50, z=25116.94], EntityChicken['¼¦'/2803, l='MpServer', x=-25112.53, y=70.00, z=25109.28], EntityChicken['¼¦'/2804, l='MpServer', x=-25114.56, y=70.00, z=25110.47], EntityChicken['¼¦'/2805, l='MpServer', x=-25107.78, y=75.00, z=25108.78], EntityChicken['¼¦'/2806, l='MpServer', x=-25112.75, y=70.00, z=25110.59], EntityChicken['¼¦'/2807, l='MpServer', x=-25107.78, y=75.00, z=25113.22], EntityChicken['¼¦'/2808, l='MpServer', x=-25109.47, y=70.00, z=25117.44], EntityChicken['¼¦'/2809, l='MpServer', x=-25112.84, y=75.00, z=25112.47], EntityChicken['¼¦'/2810, l='MpServer', x=-25111.22, y=75.00, z=25108.78], EntityZombie['½©Ê¬'/7290, l='MpServer', x=-25141.50, y=79.00, z=25023.50], EntityChicken['¼¦'/2811, l='MpServer', x=-25119.13, y=70.00, z=25108.19], EntityChicken['¼¦'/2812, l='MpServer', x=-25107.75, y=69.88, z=25108.63], EntityChicken['¼¦'/2813, l='MpServer', x=-25113.22, y=75.00, z=25113.22], EntityChicken['¼¦'/2814, l='MpServer', x=-25112.16, y=75.00, z=25112.47], EntityChicken['¼¦'/2815, l='MpServer', x=-25119.19, y=70.00, z=25109.09], EntitySkeleton['÷¼÷Ã'/7807, l='MpServer', x=-25130.50, y=26.00, z=25114.59]]
+	Retry entities: 0 total; []
+	Server brand: cauldron,craftbukkit,mcpc,fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2432)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:916)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:122)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 235382632 bytes (224 MB) / 556396544 bytes (530 MB) up to 1769209856 bytes (1687 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx1700m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 Optifine OptiFine_1.7.10_HD_U_B7 43 mods loaded, 43 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	appliedenergistics2-core{rv1-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	NotEnoughItems{1.0.3.77} [Not Enough Items] (NotEnoughItems.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PlayerAPI{1.3} [Player API] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartCore{1.0.2} [Smart Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	uniskinmod{1.2-dev3} [Universal Skin Mod] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2{2.2.736-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.736-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1[TFCN].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	appliedenergistics2{rv1-stable-1} [Applied Energistics 2] (appliedenergistics2-rv1-stable-1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BattleTowers{1.5.2} [Battle Towers] (BattleTowers-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildMod{v1.0} [Build Mod] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CoroAI{v1.0} [CoroAI] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ExtendedRenderer{v1.0} [Extended Renderer] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ConfigMod{v1.0} [Extended Mod Config] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FastCraft{1.21} [FastCraft] (fastcraft-1.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	inventorytweaks{1.59-dev-155-5dbbb14} [Inventory Tweaks] (InventoryTweaks-1.59-dev-155.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IronChest{6.0.62.742} [Iron Chest] (Iron-Chests-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] (Mantle-1.7.10-0.3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	New Gui{1.0} [New Gui] (NewGui1.0.3-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ReiMinimap{1.7.10} [Rei'sÐ¡µØÍ¼ ¶éÂäºº»¯] (Reis-minimap-mod-cn-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	healthbar{1.2} [Health Bar] (shengming.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	shincolle{1.7.10.rv19} [Shinkeiseikan Collection] (ShinColle-1.7.10.rv19.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartMoving{15.5} [Smart Moving] (SmartMoving-1.7.10-15.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartRender{2.1} [Smart Render] (SmartRender-1.7.10-2.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TConstruct{1.7.10-1.8.2.build858} [Tinkers' Construct] (TConstruct-1.7.10-1.8.2a.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TofuCraft{2.1.5-MC1.7.10} [¶¹¸¯Craft (TofuCraft)] (TofuCraft-2.1.5-MC1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TofuFactory{1.2.0-MC1.7.10} [¶¹¸¯Factory Reloaded (TofuFactory Reloaded)] (TofuFactoryR-1.2.0-MC1.7.10[zh-CN].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TwilightForest{2.3.7} [The Twilight Forest] (twilightforest-1.7.10-2.3.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ZAMod{v1.9.5} [Zombie Awareness] (ZombieAwareness-1.9.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AE2 Version: stable rv1-stable-1 for Forge 10.13.0.1187
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	TConstruct Environment: Environment healthy.
+	AE2 Integration: IC2:ON, RotaryCraft:OFF, RC:OFF, BC:OFF, MJ6:OFF, MJ5:OFF, RF:OFF, RFItem:OFF, MFR:OFF, DSU:OFF, FZ:OFF, FMP:OFF, RB:OFF, CLApi:OFF, Waila:OFF, InvTweaks:ON, NEI:ON, CraftGuide:OFF, Mekanism:OFF, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Launched Version: 1.7.10-Forge10.13.2.1291
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7560D GL version 4.5.13399 Compatibility Profile Context 15.200.1062.1004, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: ¼òÌåÖÐÎÄ (ÖÐ¹ú)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

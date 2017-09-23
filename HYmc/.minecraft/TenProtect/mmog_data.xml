@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VersionUpdateData>
+  <VersionConf>16:16:16:16</VersionConf>
+  <ClientConf>
+    <VersionData>
+      <Version>2.5.0.1027</Version>
+      <Uin>0</Uin>
+      <WorldID>0.0.0.0</WorldID>
+    </VersionData>
+    <VersionDemoStr>2.5.0.1027</VersionDemoStr>
+    <resv1>0.0.0.0</resv1>
+  </ClientConf>
+</VersionUpdateData>

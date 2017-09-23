@@ -1,0 +1,41 @@
+[02:29:28] [launcher/INFO]: Setting user: reyookixuan
+[02:29:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[02:29:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Build Mod, FMLFileResourcePack:CoroAI, FMLFileResourcePack:Extended Renderer, FMLFileResourcePack:Extended Mod Config, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Flan's Mod, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Mantle, FMLFileResourcePack:New Gui, FMLFileResourcePack:Rei's–°µÿÕº ∂È¬‰∫∫ªØ, FMLFileResourcePack:Shinkeiseikan Collection, FMLFileResourcePack:Smart Moving, FMLFileResourcePack:Smart Render, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:TofuCraft, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Cute Mob Models, FMLFileResourcePack:Zombie Awareness
+[02:29:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Build Mod, FMLFileResourcePack:CoroAI, FMLFileResourcePack:Extended Renderer, FMLFileResourcePack:Extended Mod Config, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Flan's Mod, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Mantle, FMLFileResourcePack:New Gui, FMLFileResourcePack:Rei's–°µÿÕº ∂È¬‰∫∫ªØ, FMLFileResourcePack:Shinkeiseikan Collection, FMLFileResourcePack:Smart Moving, FMLFileResourcePack:Smart Render, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:TofuCraft, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Cute Mob Models, FMLFileResourcePack:Zombie Awareness, FMLFileResourcePack:Flan's Mod : Modern Warfare-Content Pack(E-doctor CN 90%)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Simple Parts-Content Pack(E-doctor CN 90%)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Ye Olde-Content Pack(E-doctorCN)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Zombie-Content Pack(E-doctor CN)-1.7.10-4.10.0.jar
+[02:29:52] [Client thread/WARN]: File flansmod:sounds/BulletHit.ogg does not exist, cannot add it to event flansmod:BulletHit
+[02:29:52] [Sound Library Loader/INFO]: Sound engine started
+[02:29:55] [Client thread/INFO]: textures/blocks: dropping miplevel from 4 to 3, because of minTexel: 14
+[02:29:55] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[02:29:57] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/goggles_moss.png, java.io.FileNotFoundException
+[02:29:57] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/vest_moss.png, java.io.FileNotFoundException
+[02:29:57] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/boots_moss.png, java.io.FileNotFoundException
+[02:29:57] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/wings_moss.png, java.io.FileNotFoundException
+[02:29:57] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
+[02:30:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Build Mod, FMLFileResourcePack:CoroAI, FMLFileResourcePack:Extended Renderer, FMLFileResourcePack:Extended Mod Config, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Flan's Mod, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Mantle, FMLFileResourcePack:New Gui, FMLFileResourcePack:Rei's–°µÿÕº ∂È¬‰∫∫ªØ, FMLFileResourcePack:Shinkeiseikan Collection, FMLFileResourcePack:Smart Moving, FMLFileResourcePack:Smart Render, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:∂π∏ØCraft (TofuCraft), FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Cute Mob Models, FMLFileResourcePack:Zombie Awareness, FMLFileResourcePack:Flan's Mod : Modern Warfare-Content Pack(E-doctor CN 90%)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Simple Parts-Content Pack(E-doctor CN 90%)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Ye Olde-Content Pack(E-doctorCN)-1.7.10-4.10.0.jar, FMLFileResourcePack:Flan's Mod : Zombie-Content Pack(E-doctor CN)-1.7.10-4.10.0.jar
+[02:30:03] [Client thread/INFO]: Created: 2048x1024 textures/blocks-atlas
+[02:30:04] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/goggles_moss.png, java.io.FileNotFoundException
+[02:30:04] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/vest_moss.png, java.io.FileNotFoundException
+[02:30:05] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/boots_moss.png, java.io.FileNotFoundException
+[02:30:05] [Client thread/ERROR]: Using missing texture, unable to load tinker:textures/items/travelgear/wings_moss.png, java.io.FileNotFoundException
+[02:30:05] [Client thread/INFO]: Created: 1024x2048 textures/items-atlas
+[02:30:06] [Client thread/WARN]: File flansmod:sounds/BulletHit.ogg does not exist, cannot add it to event flansmod:BulletHit
+[02:30:06] [Sound Library Loader/INFO]: Sound engine started
+[02:31:22] [Client thread/INFO]: Connecting to b.laimc.com, 30369
+[02:31:24] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:24] [Client thread/INFO]: [CHAT] ?ª∂”≠, reyookixuan!
+[02:31:24] [Client thread/INFO]: [CHAT]  ‰»Î /help ≤Èø¥∞Ô÷˙.
+[02:31:24] [Client thread/INFO]: [CHAT] µ±«∞‘⁄œﬂ: reyookixuan
+[02:31:24] [Client thread/INFO]: [CHAT] ƒ„√ª”––¬µƒ” º˛
+[02:31:24] [Client thread/INFO]: [CHAT] Welcome reyookixuan to the server!
+[02:31:24] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
+[02:31:24] [Client thread/INFO]: [CHAT] Smart Moving set to 'Easy'
+[02:31:24] [Client thread/INFO]: [CHAT] A new °ÏeOptiFine°Ïf version is available: °ÏeHD Ultra D6°Ïf
+[02:31:29] [Client thread/INFO]: [CHAT] InvTweaks: ≈‰÷√Œƒº˛“—‘ÿ»Î
+[02:31:29] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:33] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:38] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:41] [Client thread/INFO]: [CHAT] «Î ‰»Î: /register password ConfirmPassword ¿¥◊¢≤·
+[02:31:43] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:48] [Client thread/INFO]: [CHAT] «Î ‰»Î "/register √‹¬Î √‹¬Î" ¿¥◊¢≤·
+[02:31:49] [Client thread/INFO]: [CHAT] Successfully registered!
+[02:32:31] [Client thread/INFO]: Stopping!

@@ -1,0 +1,49 @@
+{
+  "last": "Default",
+  "bgpath": "",
+  "username": "reyookixuan",
+  "clientToken": "927bb7b3-f0d4-49ed-b591-6cd83161f256",
+  "enableShadow": false,
+  "theme": 2,
+  "java": [
+    {
+      "ver": "1.8.0_45",
+      "platform": 2,
+      "location": "C:\\Program Files\\Java\\jre1.8.0_45\\bin"
+    },
+    {
+      "ver": "1.8.0_51",
+      "platform": 2,
+      "location": "C:\\Program Files\\Java\\jre1.8.0_51\\bin"
+    },
+    {
+      "ver": "1.8.0_91",
+      "platform": 2,
+      "location": "C:\\Program Files\\Java\\jre1.8.0_91\\bin"
+    }
+  ],
+  "logintype": 0,
+  "downloadtype": 0,
+  "configurations": {
+    "Default": {
+      "name": "Default",
+      "selectedMinecraftVersion": "1.7.10-Forge10.13.2.1291",
+      "minecraftArgs": "",
+      "maxMemory": "4096",
+      "width": "1000",
+      "height": "600",
+      "gameDir": ".\\.minecraft",
+      "javaDir": "C:\\Program Files\\Java\\jre1.8.0_45\\bin\\javaw.exe",
+      "serverIp": "",
+      "java": "Default",
+      "fullscreen": false,
+      "debug": false,
+      "noJVMArgs": false,
+      "canceledWrapper": false,
+      "launcherVisibility": 0,
+      "gameDirType": 0
+    }
+  },
+  "checkUpdate": false,
+  "yggdrasil": {}
+}

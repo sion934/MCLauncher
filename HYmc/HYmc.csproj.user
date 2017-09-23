@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <PublishUrlHistory>C:\webs\hymc\</PublishUrlHistory>
+    <InstallUrlHistory>http://downloadvocal-10056376.cos.myqcloud.com/hymc/</InstallUrlHistory>
+    <SupportUrlHistory>https://hymc.vocalmiku.com/forum/|http://hymc.vocalmiku.com/info.html</SupportUrlHistory>
+    <UpdateUrlHistory>http://downloadvocal-10056376.cos.myqcloud.com/hymc/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory>https://hymc.vocalmiku.com/forum/viewforum.php%3ff=2|https://hymc.vocalmiku.com/info.html|http://hymc.vocalmiku.com/info.html</ErrorReportUrlHistory>
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 15-7-10 上午1:32
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.ClassNotFoundException: mcheli.MCH_MOD
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:162)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:502)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(SourceFile:124)
+Caused by: java.lang.ClassNotFoundException: mcheli.MCH_MOD
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at cpw.mods.fml.common.ModClassLoader.loadClass(ModClassLoader.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:420)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:492)
+	... 15 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+	... 42 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 85705160 bytes (81 MB) / 212602880 bytes (202 MB) up to 1844183040 bytes (1758 MB)
+	JVM Flags: 5 total; -Xincgc -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmx1792m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 Optifine OptiFine_1.7.10_HD_U_B7 40 mods loaded, 40 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed
+	FML{7.10.85.1291} [Forge Mod Loader] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed
+	Forge{10.13.2.1291} [Minecraft Forge] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed
+	appliedenergistics2-core{rv1-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed
+	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) Unloaded->Constructed
+	NotEnoughItems{1.0.3.77} [Not Enough Items] (NotEnoughItems 物品管理器 v1.0.3.77.jar) Unloaded->Constructed
+	PlayerAPI{1.3} [Player API] (minecraft.jar) Unloaded->Constructed
+	SmartCore{1.0.2} [Smart Core] (minecraft.jar) Unloaded->Constructed
+	uniskinmod{1.2-dev3} [Universal Skin Mod] (minecraft.jar) Unloaded->Constructed
+	inventorytweaks{1.59-dev-155-5dbbb14} [Inventory Tweaks] ([R键整理]InventoryTweaks-1.59-dev-155.jar) Unloaded->Constructed
+	DynamicLights{1.3.8} [Dynamic Lights] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] ([动态光源]DynamicLights-1.7.10.jar) Unloaded->Constructed
+	healthbar{1.2} [Health Bar] ([显血mod]独立生命显示.jar) Unloaded->Constructed
+	IC2{2.2.736-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.736-experimental.jar) Unloaded->Constructed
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1[TFCN].jar) Unloaded->Constructed
+	appliedenergistics2{rv1-stable-1} [Applied Energistics 2] (appliedenergistics2-rv1-stable-1.jar) Unloaded->Constructed
+	BattleTowers{1.5.2} [Battle Towers] (BattleTowers-1.7.10.jar) Unloaded->Constructed
+	FastCraft{1.21} [FastCraft] (fastcraft-1.21.jar) Unloaded->Constructed
+	IC2NuclearControl{1.7.10.01} [Nuclear Control] (ic2nc-1.7.10-1.7.10.01.jar) Unloaded->Constructed
+	IronChest{6.0.62.742} [Iron Chest] (Iron-Chests-Mod-1.7.10.jar) Unloaded->Constructed
+	mcheli{1.0} [mcheli] (MC1.7.10_mcheli_0.10.6.zip) Unloaded->Errored
+	diversity{ALPHA 1.5} [Diversity] (mckuai1.7.10diversityV1.5mod.jar) Unloaded->Constructed
+	cfm{3.4.7} [?9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) Unloaded->Constructed
+	ReiMinimap{1.7.10} [Rei's小地图 堕落汉化] (Reis-minimap-mod-cn-1.7.10.jar) Unloaded->Constructed
+	shincolle{1.7.10.rv19} [Shinkeiseikan Collection] (ShinColle-1.7.10.rv19.jar) Unloaded->Constructed
+	SmartMoving{15.5} [Smart Moving] (SmartMoving-1.7.10-15.5.jar) Unloaded->Constructed
+	SmartRender{2.1} [Smart Render] (SmartRender-1.7.10-2.1.jar) Unloaded->Constructed
+	TofuCraft{1.6.9-MC1.7.2} [摛晠Craft (TofuCraft)] (TofuCraft-1.6.9-MC1.7.2.jar) Unloaded->Constructed
+	toolsdoneright{1.1.3} [Tools Done Right] (Tools Done Right by NukeDuck [1.7.10][1.1.3].zip) Unloaded->Constructed
+	TwilightForest{2.3.7} [The Twilight Forest] (twilightforest-1.7.10-2.3.7.jar) Unloaded->Constructed
+	Wa{1.7.10.11} [Wa] (Wa-1.7.10.12-zh-en-ja.jar) Unloaded->Constructed
+	AE2 Version: stable rv1-stable-1 for Forge 10.13.0.1187

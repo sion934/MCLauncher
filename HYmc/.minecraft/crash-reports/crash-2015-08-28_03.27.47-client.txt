@@ -1,0 +1,150 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 15-8-28 ÉÏÎç3:27
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:744)
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:97)
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:212)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_78765_e(PlayerControllerMP.java:273)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1590)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:961)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:887)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:122)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:744)
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:97)
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:212)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_78765_e(PlayerControllerMP.java:273)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityClientPlayerMP['reyookixuan'/487, l='MpServer', x=-254.50, y=72.62, z=-420.49], GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-268.50, y=70.00, z=-427.34]]
+	Chunk stats: MultiplayerChunkCache: 416, 416
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-295,70,-501), Chunk: (at 9,4,11 in -19,-32; contains blocks -304,0,-512 to -289,255,-497), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
+	Level time: 2245013 game time, 2353760 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 62 total; [GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-268.50, y=70.00, z=-427.34], EntityZombie['½©Ê¬'/232710, l='MpServer', x=-288.50, y=24.00, z=-447.50], EntityItem['item.item.shincolle:Grudge'/232334, l='MpServer', x=-314.59, y=68.13, z=-444.38], EntityZombie['½©Ê¬'/196877, l='MpServer', x=-263.06, y=22.00, z=-447.63], EntityCreeper['ÅÀÐÐÕß'/232717, l='MpServer', x=-269.50, y=15.00, z=-432.50], EntityCreeper['ÅÀÐÐÕß'/232332, l='MpServer', x=-284.50, y=51.00, z=-401.50], EntityCreeper['ÅÀÐÐÕß'/232716, l='MpServer', x=-269.50, y=15.00, z=-431.50], GCEntityOtherPlayerMP['Herobrine'/224882, l='MpServer', x=-223.72, y=-20.00, z=-390.16], EntitySkeleton['÷¼÷Ã'/232593, l='MpServer', x=-229.94, y=40.00, z=-473.53], EntityScent['entity.ZAMod.EntityScent.name'/232720, l='MpServer', x=-248.44, y=25.00, z=-447.94], EntityZombie['½©Ê¬'/232599, l='MpServer', x=-284.13, y=14.00, z=-377.38], EntityScent['entity.ZAMod.EntityScent.name'/232597, l='MpServer', x=-225.50, y=44.00, z=-430.50], EntityCreeper['ÅÀÐÐÕß'/232724, l='MpServer', x=-201.50, y=18.00, z=-392.50], EntityZombie['½©Ê¬'/232730, l='MpServer', x=-320.00, y=33.00, z=-447.50], GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-268.50, y=70.00, z=-427.34], EntityScent['entity.ZAMod.EntityScent.name'/232739, l='MpServer', x=-258.81, y=70.00, z=-409.69], EntityScent['entity.ZAMod.EntityScent.name'/232743, l='MpServer', x=-267.00, y=69.00, z=-400.00], EntityHorse['Âí'/38, l='MpServer', x=-243.38, y=69.00, z=-394.91], GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-222.75, y=69.00, z=-390.38], EntityCreeper['ÅÀÐÐÕß'/232239, l='MpServer', x=-261.50, y=27.00, z=-372.50], GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-236.66, y=70.00, z=-403.78], EntitySpider['Ö©Öë'/232631, l='MpServer', x=-220.50, y=41.00, z=-425.50], EntityItem['item.item.shincolle:Grudge'/232378, l='MpServer', x=-283.22, y=68.13, z=-402.81], EntityItem['item.item.rottenFlesh'/232377, l='MpServer', x=-284.63, y=68.13, z=-401.94], EntityZombie['½©Ê¬'/3709443, l='MpServer', x=-14.57, y=-53.62, z=-28.31], EntityBat['òùòð'/232639, l='MpServer', x=-282.59, y=19.10, z=-452.34], EntityZombie['½©Ê¬'/232767, l='MpServer', x=-281.97, y=54.00, z=-404.47], EntityZombie['½©Ê¬'/232766, l='MpServer', x=-291.50, y=51.00, z=-397.09], EntitySquid['öÏÓã'/232643, l='MpServer', x=-205.31, y=62.53, z=-372.91], EntityClientPlayerMP['reyookixuan'/487, l='MpServer', x=-254.50, y=72.62, z=-420.49], EntitySquid['öÏÓã'/232642, l='MpServer', x=-210.50, y=62.13, z=-371.69], GCEntityOtherPlayerMP['kashuu'/200991, l='MpServer', x=-185.43, y=128.99, z=-386.60], EntitySquid['öÏÓã'/232641, l='MpServer', x=-212.50, y=60.00, z=-370.25], EntitySkeleton['÷¼÷Ã'/232769, l='MpServer', x=-282.59, y=47.00, z=-372.06], EntityZombie['½©Ê¬'/232263, l='MpServer', x=-248.47, y=25.00, z=-447.97], EntityScent['entity.ZAMod.EntityScent.name'/232645, l='MpServer', x=-234.34, y=70.00, z=-400.56], EntityZombie['½©Ê¬'/232773, l='MpServer', x=-304.50, y=40.00, z=-443.50], EntitySlime['Ê·À³Ä·'/40519, l='MpServer', x=-255.69, y=36.00, z=-398.31], EntitySquid['öÏÓã'/232644, l='MpServer', x=-200.94, y=60.69, z=-377.13], EntitySkeleton['÷¼÷Ã'/232659, l='MpServer', x=-215.50, y=32.00, z=-461.25], EntityItem['item.item.shincolle:Grudge'/232274, l='MpServer', x=-243.84, y=69.13, z=-409.25], EntitySkeleton['÷¼÷Ã'/232658, l='MpServer', x=-213.88, y=32.00, z=-472.50], EntityBat['òùòð'/232785, l='MpServer', x=-285.31, y=52.12, z=-389.72], EntityItem['item.item.rottenFlesh'/232272, l='MpServer', x=-243.59, y=69.13, z=-410.59], EntityBat['òùòð'/232784, l='MpServer', x=-285.28, y=55.10, z=-407.69], EntitySkeleton['÷¼÷Ã'/232405, l='MpServer', x=-248.50, y=37.00, z=-469.75], EntityZombie['½©Ê¬'/232661, l='MpServer', x=-220.50, y=40.00, z=-433.97], EntityItem['item.item.shincolle:Grudge'/232411, l='MpServer', x=-309.13, y=68.13, z=-441.66], EntityItem['item.item.rottenFlesh'/232410, l='MpServer', x=-308.81, y=68.13, z=-441.19], EntityItem['item.item.shincolle:Grudge'/232281, l='MpServer', x=-219.03, y=68.13, z=-407.16], EntityItem['item.item.rottenFlesh'/232280, l='MpServer', x=-218.84, y=68.13, z=-406.34], EntityZombie['½©Ê¬'/232792, l='MpServer', x=-274.50, y=48.00, z=-378.50], EntityItem['item.item.shincolle:Grudge'/232287, l='MpServer', x=-271.34, y=69.13, z=-418.50], EntityItem['item.item.shincolle:Grudge'/232414, l='MpServer', x=-262.31, y=69.13, z=-403.91], EntityItem['item.item.rottenFlesh'/232285, l='MpServer', x=-270.25, y=69.13, z=-418.59], GCEntityOtherPlayerMP['Herobrine'/231431, l='MpServer', x=-235.69, y=-20.00, z=-404.41], EntitySkeleton['÷¼÷Ã'/232161, l='MpServer', x=-236.70, y=38.00, z=-430.50], EntityItem['item.item.rottenFlesh'/232295, l='MpServer', x=-289.78, y=69.13, z=-426.16], EntityZombie['½©Ê¬'/232037, l='MpServer', x=-245.47, y=42.00, z=-426.97], EntityItem['item.item.shincolle:Grudge'/232297, l='MpServer', x=-288.88, y=69.13, z=-425.53], EntityItem['item.item.rottenFlesh'/232303, l='MpServer', x=-239.41, y=69.13, z=-395.88], EntityItem['item.item.shincolle:Grudge'/232305, l='MpServer', x=-239.22, y=69.13, z=-396.44]]
+	Retry entities: 0 total; []
+	Server brand: cauldron,craftbukkit,mcpc,fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2432)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:916)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:122)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 282168600 bytes (269 MB) / 849403904 bytes (810 MB) up to 1769209856 bytes (1687 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx1700m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 Optifine OptiFine_1.7.10_HD_U_B7 46 mods loaded, 46 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forge-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	appliedenergistics2-core{rv1-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	NotEnoughItems{1.0.3.77} [Not Enough Items] (NotEnoughItems.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	PlayerAPI{1.3} [Player API] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartCore{1.0.2} [Smart Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	uniskinmod{1.2-dev3} [Universal Skin Mod] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IC2{2.2.736-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.736-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1[TFCN].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	appliedenergistics2{rv1-stable-1} [Applied Energistics 2] (appliedenergistics2-rv1-stable-1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BattleTowers{1.5.2} [Battle Towers] (BattleTowers-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	BuildMod{v1.0} [Build Mod] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	CoroAI{v1.0} [CoroAI] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ExtendedRenderer{v1.0} [Extended Renderer] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ConfigMod{v1.0} [Extended Mod Config] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FastCraft{1.21} [FastCraft] (fastcraft-1.21.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	GalacticraftCore{3.0.12} [Galacticraft Core] (GalacticraftCore-1.7-3.0.12.357.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	GalacticraftMars{3.0.12} [Galacticraft Planets] (Galacticraft-Planets-1.7-3.0.12.357.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	inventorytweaks{1.59-dev-155-5dbbb14} [Inventory Tweaks] (InventoryTweaks-1.59-dev-155.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	IronChest{6.0.62.742} [Iron Chest] (Iron-Chests-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] (Mantle-1.7.10-0.3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	New Gui{1.0} [New Gui] (NewGui1.0.3-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ReiMinimap{1.7.10} [Rei'sÐ¡µØÍ¼ ¶éÂäºº»¯] (Reis-minimap-mod-cn-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	healthbar{1.2} [Health Bar] (shengming.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	shincolle{1.7.10.rv19} [Shinkeiseikan Collection] (ShinColle-1.7.10.rv19.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartMoving{15.5} [Smart Moving] (SmartMoving-1.7.10-15.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	SmartRender{2.1} [Smart Render] (SmartRender-1.7.10-2.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TofuCraft{2.1.5-MC1.7.10} [¶¹¸¯Craft (TofuCraft)] (TofuCraft-2.1.5-MC1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TofuFactory{1.2.0-MC1.7.10} [¶¹¸¯Factory Reloaded (TofuFactory Reloaded)] (TofuFactoryR-1.2.0-MC1.7.10[zh-CN].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	TwilightForest{2.3.7} [The Twilight Forest] (twilightforest-1.7.10-2.3.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	yarr_cutemobmodels{1.0.8} [Cute Mob Models] (yarrcutemobmodels-1.0.8-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	ZAMod{v1.9.5} [Zombie Awareness] (ZombieAwareness-1.9.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	AE2 Version: stable rv1-stable-1 for Forge 10.13.0.1187
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	AE2 Integration: IC2:ON, RotaryCraft:OFF, RC:OFF, BC:OFF, MJ6:OFF, MJ5:OFF, RF:OFF, RFItem:OFF, MFR:OFF, DSU:OFF, FZ:OFF, FMP:OFF, RB:OFF, CLApi:OFF, Waila:OFF, InvTweaks:ON, NEI:ON, CraftGuide:OFF, Mekanism:OFF, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Launched Version: 1.7.10-Forge10.13.2.1291
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7560D GL version 4.5.13399 Compatibility Profile Context 15.200.1062.1004, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: ¼òÌåÖÐÎÄ (ÖÐ¹ú)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
